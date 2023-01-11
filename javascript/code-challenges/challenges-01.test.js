@@ -25,7 +25,11 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  let newArr = [];
+  arr.forEach(Elem => {
+    arr.push(Elem + '!');
+  })
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,7 +41,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let newArr = [];
+  arr.forEach(Elem => {
+    newArr.push(Elem.toUpperCase());
+  })
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,14 +56,18 @@ Write a function named `greeting` that takes in a single string and returns the 
 Then, write a function named `speaker` that takes in an array of strings and a callback function.
 
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+
+
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+word.forEach(Elem =>{
+  
+})
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,13 +87,16 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
-
+// solution from code review
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
@@ -98,12 +113,24 @@ The inventory is formatted like this:
 ]
 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+
+forEach to look at every object in that array
+create an empty array --> return that modified array - create an empty array
+push available items to the array - .push
+how do I know if an item is available - check the boolean
+if statement - cheicking if the item is available
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let listArr = [];
+  availableItems.forEach((item) => {
+    if (item.available) {
+      listArr.push(item.name);
+    }
+  })
+  return listArr;
 };
-
+// solution from code review
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
 
@@ -116,12 +143,31 @@ Iterate over the array using forEach to determine the output based on several ru
   - Otherwise, add the number to the output array.
 
 Return the resulting output array.
+
+if statements
+need an empty array
+if statement to see if the number is divisible by 3 and 5 first and push fizzbuzz to the array
+if statement to see if the number is divisible by 3 and push fizz to the array
+if statement to see if the number is divisible bt 5 and push buzz to the array
+
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let arrNum = [];
+  arr.forEach(num => {
+    if (num % 15 === 0) {
+      arrNum.push('Fizz Buzz');
+    } else if (num % 3 === 0) {
+      arrNum.push('Fizz');
+    } else if (num % 5 === 0) {
+      arrNum.push('Buzz');
+    } else {
+      arrNum.push(num);
+    }
+  })
+  return arrNum;
 };
-
+// used https://flexiple.com/javascript/fizzbuzz-javascript/ to work the answer out
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
