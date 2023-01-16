@@ -124,9 +124,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  return str.split('').reduce((newStr, char, idx) => {
+    return char + newStr;
+  }, '');
 };
-
+// GOT ANSWER FROM CODE REVIEW
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
