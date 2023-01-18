@@ -62,7 +62,9 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-
+for(let i = 0; i < str.length + 1; i++) {
+  result.push(str.slice(i));
+}
   return result;
 };
 
@@ -119,10 +121,14 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(ingredients => {
+    let withoutAmount = ingredients.slice(ingredients.indexOf(' ') + 1);
+    let WithouUnit = withoutAmount.slice(withoutAmount.indexOf(' ') + 1);
+    result.push(WithouUnit);
+  });
   return result;
 };
-
+// GOT ANSWER FROM CODE REVIEW
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
