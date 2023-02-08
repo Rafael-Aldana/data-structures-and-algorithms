@@ -32,7 +32,7 @@ CHALLENGE 3
 For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
-const containsAnd = (arr) => arr.filter(elem => elem.inCludes('and'));
+const containsAnd = (arr) => arr.filter((elem) => elem.includes('and'));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -52,7 +52,7 @@ CHALLENGE 5
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => arr.filter(elem => forbiddenValues.inCludes === false);
+const notInFirstArray = (forbiddenValues, arr) => arr.filter((elem) => !(forbiddenValues.includes(elem)));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal

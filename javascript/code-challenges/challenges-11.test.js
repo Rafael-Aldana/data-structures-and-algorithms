@@ -73,7 +73,17 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  let newArr = [];
+  input.map((arr) => {
+    let secondArr = [];
+    arr.map((num) => {
+      if (num % 5 === 0 && typeof num === 'number') {
+        secondArr.push(Math.pow(2, num));
+      }
+    });
+    newArr.push(secondArr);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -148,14 +158,9 @@ CHALLENGE 6
 
 //Write a function named findShortest ///that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the character who is the shortest in height.
 ------------------------------------------------------------------------------------------------ */
-
 let findShortest = (data) => {
-  let result = data.reduce((acumulator, currentValue) => {
-    if (acumulator.height < currentValue.height) {
-    } acumulator = currentValue;
-    return acumulator;
-  }
-  )
+  data.sort((a,b) => a.height - b.height);
+  return data[0].name;
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -39,11 +39,8 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  for (let key in obj) {
-    if (obj[key] === value) {
-      return true;
-    }
-  }
+  let newArr = Object.values(obj);
+  return newArr.includes(value);
 };
 
 /* ------------------------------------------------------------------------------------------------
