@@ -79,14 +79,15 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  let totalDailySales = [];
-  for (let hour of hoursOpen) totalDailySales.push(0);
- for (let store of stores){
-  for (let i = 0; i < store.length; i++) {
-    totalDailySales[i] += store[i];
- }
-    return totalDailySales;
+  let hourlyTotals=[];
+  for(let i = 0; i < stores[0].length; i++){
+    let hourlySum = 0;
+    for(let j = 0;j<stores.length;j++){
+      hourlySum += stores[j][i];
+    }
+    hourlyTotals.push(hourlySum);
   }
+  return hourlyTotals;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -99,13 +100,12 @@ Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  for (let i = 0; i <= hours.length - 1; i++) {
-    let hourlySales = [];
-    let cookiesSold = 0;
-    for (let j = 0; j <= data.length - 1; j++) {
-    }
-  }
-}
+    let newArr = [];
+    data.forEach((element, i) => {
+      newArr.push({time:`${hours[i]}`, sales:`${element} cookies`});
+    });
+    return newArr;
+  };
 
 
 /* ------------------------------------------------------------------------------------------------

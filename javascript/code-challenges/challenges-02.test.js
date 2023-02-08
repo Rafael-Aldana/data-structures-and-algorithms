@@ -10,9 +10,9 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   let newArr = [];
-  arr.forEach(num => {
-    newArr.push(math.pow(num, 3));
-  })
+  arr.forEach((element, index) => {
+    newArr[index] = Math.pow(element, 3);
+  });
   return newArr;
 };
 
@@ -52,7 +52,7 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 const forLoopTwoToThe = (arr) => {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
-    newArr.push(math.pow(2, arr[i]));
+    newArr[i] = Math.pow(2, arr[i]);
   }
   return newArr;
 };
@@ -65,9 +65,9 @@ CHALLENGE 5
 
 const forEachTwoToThe = (arr) => {
   let newArr = [];
-  arr.forEach(num => {
-    newArr.push(math.pow(2, num));
-  })
+  arr.forEach((element, i) => {
+    newArr[i] = Math.pow(2, element);
+  });
   return newArr;
 };
 
@@ -78,7 +78,7 @@ CHALLENGE 6
 //Write a function named mapTwoToThe// that produces the same output as your forLoopTwoToThe function from challenge 4 and your forEachTwoToThe function from challenge 5, but uses// map instead of a for loop or forEach.//
 ------------------------------------------------------------------------------------------------ */
 
-const mapTwoToThe = (arr) => arr.map(num => math.pow(2, num));
+const mapTwoToThe = (arr) => arr.map(num => Math.pow(2, num));
 
 
 /* ------------------------------------------------------------------------------------------------
