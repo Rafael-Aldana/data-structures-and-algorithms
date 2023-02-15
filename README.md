@@ -21,4 +21,5 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
                   TABLE OF CONTENTS
-- [Array Reverse](javascript/arrayReverse/readme.md)
+- [Array Reverse](javascript/assets/arrayReverse.png)
+- [Array Insert](javascript/assets/insertShiftArray.png)
