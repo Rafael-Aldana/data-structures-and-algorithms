@@ -20,6 +20,8 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-                  TABLE OF CONTENTS
+                        TABLE OF CONTENTS
+
 - [Array Reverse](javascript/assets/arrayReverse.png)
 - [Array Insert](javascript/assets/insertShiftArray.png)
+- [Array Binary](javascript/assets/array-binary-search.png)

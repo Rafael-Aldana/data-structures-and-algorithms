@@ -4,7 +4,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ## Whiteboard Process
 
-![array-reverse-whiteboard](javascript/assets/arrayReverse.png)
+![array-reverse-whiteboard](assets/arrayReverse.png)
 
 ## Approach & Efficiency
 
