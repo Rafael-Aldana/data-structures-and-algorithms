@@ -4,7 +4,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Whiteboard Process
 
-![Whiteboard Process](javascript/assets/insertShiftArray.png)
+![Whiteboard Process](assets/insertShiftArray.png)
 
 ## Approach & Efficiency
 
