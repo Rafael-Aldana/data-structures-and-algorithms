@@ -17,7 +17,26 @@
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail = null;
+    this.length = 0;
   }
+
+  kthFromEnd(k) {
+    let distanceToEnd = this.length - 1;
+    let current = this.head;
+    if(k > distanceToEnd) {
+      return `List.legth===${this.length}, maxk===${distanceToEnd}`;
+    }
+    while (distanceToEnd > k ) {
+      current = current.next;
+      distanceToEnd--;
+    } return current.value;
+  };
+
+
+
+
+
 
   insert(value) {
     const oldHead = this.head;
