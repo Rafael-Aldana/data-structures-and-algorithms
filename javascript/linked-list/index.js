@@ -59,7 +59,22 @@ class LinkedList {
   }
 }
 
-
+const ziplists = (list1, list2) => {
+  let currentList1 = list1.head;
+  let currentList2 = list2.head;
+  let linkList3 = new LinkedList();
+  while(currentList1 || currentList2) {
+    if(currentList1) {
+      linkList3.append(currentList1.value);
+      currentList1 = currentList1.next;
+    }
+    if (currentList2) {
+      linkList3.append(currentList2.value);
+      currentList2 = currentList2.next;
+    }
+  }
+  return linkList3;
+};
 
 class Node {
   constructor(value, next=null) {
