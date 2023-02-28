@@ -27,3 +27,5 @@ To run your tests
 - [Array Binary](javascript/assets/array-binary-search.png)
 - [List Insert](javascript/assets/linked-list-insertions.png)
 - [Linked-list-zip](javascript/assets/linked-list-zip.png)
+- [Stack-queue-pseudo](javascript/assets/stack-queue-pseudo.png)
+- [Stack-queue-animal-shelter](javascript/assets/stack-queue-animal-shelter.png)
