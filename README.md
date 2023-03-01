@@ -29,3 +29,4 @@ To run your tests
 - [Linked-list-zip](javascript/assets/linked-list-zip.png)
 - [Stack-queue-pseudo](javascript/assets/stack-queue-pseudo.png)
 - [Stack-queue-animal-shelter](javascript/assets/stack-queue-animal-shelter.png)
+- [stack-queue-brackets](javascript/assets/stack-queue-brackets.png)
