@@ -22,11 +22,12 @@ To run your tests
 
                         TABLE OF CONTENTS
 
-- [Array Reverse](javascript/assets/arrayReverse.png)
-- [Array Insert](javascript/assets/insertShiftArray.png)
-- [Array Binary](javascript/assets/array-binary-search.png)
-- [List Insert](javascript/assets/linked-list-insertions.png)
-- [Linked-list-zip](javascript/assets/linked-list-zip.png)
-- [Stack-queue-pseudo](javascript/assets/stack-queue-pseudo.png)
-- [Stack-queue-animal-shelter](javascript/assets/stack-queue-animal-shelter.png)
-- [stack-queue-brackets](javascript/assets/stack-queue-brackets.png)
+- ![Array Reverse](javascript/assets/arrayReverse.png)
+- ![Array Insert](javascript/assets/insertShiftArray.png)
+- ![Array Binary](javascript/assets/array-binary-search.png)
+- ![List Insert](javascript/assets/linked-list-insertions.png)
+- ![Linked-list-zip](javascript/assets/linked-list-zip.png)
+- ![Stack-queue-pseudo](javascript/assets/stack-queue-pseudo.png)
+- ![Stack-queue-animal-shelter](javascript/assets/stack-queue-animal-shelter.png)
+- ![stack-queue-brackets](javascript/assets/stack-queue-brackets.png)
+- ![TREE-FIZZ-BUZZ](javascript/assets/tree-fizz-buzz.png)
