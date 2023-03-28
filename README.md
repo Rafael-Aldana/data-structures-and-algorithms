@@ -31,4 +31,5 @@ To run your tests
 - ![Stack-queue-animal-shelter](javascript/assets/stack-queue-animal-shelter.png)
 - ![stack-queue-brackets](javascript/assets/stack-queue-brackets.png)
 - ![TREE-FIZZ-BUZZ](javascript/assets/tree-fizz-buzz.png)
-- ![data-structures-and-algorithms](javascript/assets/hashmap-repeated-word.jpg)
+- ![Hashmap-repeated-word](javascript/assets/hashmap-repeated-word.jpg)
+- ![Tree-intersection](javascript/assets/tree-intersection.jpg)
