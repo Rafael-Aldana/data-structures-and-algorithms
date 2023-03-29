@@ -33,3 +33,4 @@ To run your tests
 - ![TREE-FIZZ-BUZZ](javascript/assets/tree-fizz-buzz.png)
 - ![Hashmap-repeated-word](javascript/assets/hashmap-repeated-word.jpg)
 - ![Tree-intersection](javascript/assets/tree-intersection.jpg)
+- ![hashmap-left-join](javascript/hashmap-left-join)
